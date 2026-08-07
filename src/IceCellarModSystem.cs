@@ -39,7 +39,7 @@ namespace IceCellar
                 // Say so out loud: with no blocks or items of our own, a
                 // silently disabled mod is indistinguishable from a broken one.
                 api.Logger.Notification(
-                    "[icecellar] disabled by ModConfig/{0} (\"Enabled\": false), cellars stay vanilla",
+                    "[icecooledcellars] disabled by ModConfig/{0} (\"Enabled\": false), cellars stay vanilla",
                     IceCellarConfig.FileName);
                 return;
             }
@@ -79,7 +79,7 @@ namespace IceCellar
                     typeof(IceCellarPatches), nameof(IceCellarPatches.GetBlockInfoPostfix))));
 
             api.Logger.Notification(
-                "[icecellar] active: {0}+ ice blocks chill a cellar, {1} for full effect ({2}°C)",
+                "[icecooledcellars] active: {0}+ ice blocks chill a cellar, {1} for full effect ({2}°C)",
                 cfg.MinBlocks, cfg.FullBlocks, cfg.Temp);
         }
 

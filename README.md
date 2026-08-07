@@ -3,7 +3,7 @@
 A Vintage Story mod: **store ice, keep food fresh.**
 
 - **Mod ID:** `icecooledcellars` (the shorter `icecellar` was already taken on
-  the ModDB; the config file and log prefix still use the mod's name)
+  the ModDB; only the config file still uses the mod's name)
 - **Author:** Feyd
 
 Vanilla cellars bottom out at 5°C no matter how deep you dig. Stack blocks of
@@ -82,7 +82,8 @@ floor, but not that mod's on/off switch, since installing this one is the
 opt-in.
 
 If cellars don't seem to be chilling, check the log: Ice Cellar reports either
-`[icecellar] active: …` or `[icecellar] disabled by ModConfig/icecellar.json`
+`[icecooledcellars] active: …` or `[icecooledcellars] disabled by
+ModConfig/icecellar.json`
 at startup.
 
 If you run Seraph's Ledger older than 1.15.1 alongside this mod, turn its

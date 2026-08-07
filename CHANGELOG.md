@@ -2,6 +2,15 @@
 
 All notable changes to Ice Cellar are documented here.
 
+## 1.0.1 — 2026-08-07
+
+### Changed
+- **Log lines now use the `[icecooledcellars]` prefix** instead of
+  `[icecellar]`. The Ice Is Cellar mod logs under `[IceCellar]`, so with both
+  installed — a common pairing, since its ice bricks chill a cellar here just
+  like glacier ice — the two were indistinguishable in a log. Nothing else
+  changed: same mechanic, same `ModConfig/icecellar.json`.
+
 ## 1.0.0 — 2026-08-07
 
 Initial standalone release. Ice Cellar began life inside The Seraph's Ledger
@@ -39,10 +48,10 @@ feature-identical to the ice-cooled cellars feature in Seraph's Ledger 1.15.0.
 
 ### Naming
 - The registered modid is **`icecooledcellars`** — the ModDB already had
-  `icecellar` reserved by another (unlisted) mod. The displayed name, the asset
-  domain's lang keys, the config file (`ModConfig/icecellar.json`) and the log
-  prefix are unaffected by that; only the modid and `assets/icecooledcellars/`
-  follow the registered id.
+  `icecellar` reserved by another (unlisted) mod. The displayed name and the
+  config file (`ModConfig/icecellar.json`) are unaffected by that; the modid,
+  `assets/icecooledcellars/` and its lang keys follow the registered id. (The
+  log prefix followed in 1.0.1.)
 
 ### Coexistence with The Seraph's Ledger
 - Both mods patch the same vanilla methods, so stacking them would chill a

@@ -51,7 +51,7 @@ namespace IceCellar
             }
             catch (Exception e)
             {
-                api.Logger.Warning("[icecellar] config load failed, using defaults: {0}", e.Message);
+                api.Logger.Warning("[icecooledcellars] config load failed, using defaults: {0}", e.Message);
             }
 
             if (cfg == null)
@@ -85,11 +85,11 @@ namespace IceCellar
                 FullBlocks = old.IceCellarFullBlocks;
                 Temp = old.IceCellarTemp;
                 MinMeltChance = old.IceCellarMinMeltChance;
-                api.Logger.Notification("[icecellar] adopted ice-cellar tuning values from seraphsledger/features.json");
+                api.Logger.Notification("[icecooledcellars] adopted ice-cellar tuning values from seraphsledger/features.json");
             }
             catch (Exception e)
             {
-                api.Logger.Warning("[icecellar] could not read seraphsledger/features.json: {0}", e.Message);
+                api.Logger.Warning("[icecooledcellars] could not read seraphsledger/features.json: {0}", e.Message);
             }
         }
 
@@ -112,7 +112,7 @@ namespace IceCellar
             }
             catch (Exception e)
             {
-                api.Logger.Warning("[icecellar] config save failed: {0}", e.Message);
+                api.Logger.Warning("[icecooledcellars] config save failed: {0}", e.Message);
             }
         }
     }
