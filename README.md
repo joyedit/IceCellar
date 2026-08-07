@@ -54,6 +54,18 @@ changes to take effect (the mechanic is wired up at load time).
 | `Temp` | `-3` | Effective cellar temperature at full effect (clamped to -5..5). |
 | `MinMeltChance` | `0.01` | Floor on the per-tick melt roll. `0` makes fully chilled cellar ice last forever. |
 
+## Multiplayer
+
+Universal mod, but only genuinely needed on the **server** — that's where food
+perishing and ice melting are computed, so a server running this delivers the
+whole mechanic to every player on it. It's therefore declared
+`requiredOnClient: false`, so players without it can still join.
+
+Installing it client-side only affects what you're told: the ice count and
+chill percentage in the block info panel, and the perish-speed number above
+them, are computed client-side. Without the mod a client sees vanilla's
+uncooled estimate while their food is in fact keeping twice as long.
+
 ## Relationship to The Seraph's Ledger
 
 This mechanic shipped first inside [The Seraph's

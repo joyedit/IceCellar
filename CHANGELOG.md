@@ -32,6 +32,10 @@ feature-identical to the ice-cooled cellars feature in Seraph's Ledger 1.15.0.
   already shows.
 - **Configurable** through `ModConfig/icecellar.json`: master switch, the two
   block thresholds, the target temperature, and the melt-chance floor.
+- **Universal, but declared `requiredOnClient: false`.** Perishing and melting
+  are computed server-side, so a server running this covers everyone on it and
+  clients without the mod can still join — they just see vanilla's uncooled
+  perish speed and no ice count in the block info panel.
 
 ### Coexistence with The Seraph's Ledger
 - Both mods patch the same vanilla methods, so stacking them would chill a
