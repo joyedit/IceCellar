@@ -1,0 +1,46 @@
+<p><strong>Store ice. Keep food fresh.</strong></p>
+
+<p>A vanilla cellar bottoms out at 5&deg;C no matter how deep you dig. Stack blocks of ice in one and it gets <em>genuinely</em> cold &mdash; down to <strong>-3&deg;C</strong> with ten blocks, which roughly <strong>doubles how long your food keeps</strong>. Cellar ice finally behaves like ice in a cellar rather than ice in the summer sun: it melts slowly, and it never floods the room.</p>
+
+<p>No new blocks, no new items, no new recipes. Just ice and a good cellar.</p>
+
+<h3>How it works</h3>
+
+<ul>
+<li><strong>Any ice counts</strong> &mdash; lake ice you harvested yourself, glacier ice, packed glacier ice.</li>
+<li><strong>Where you put it doesn't matter</strong> &mdash; ice lining the walls, floor or ceiling counts the same as ice stacked in the middle of the room, so you can build the cellar you actually want.</li>
+<li><strong>4 blocks</strong> to start chilling, <strong>10 blocks</strong> for the full effect.</li>
+<li><strong>Your cellar still has to be a cellar.</strong> The chill scales with the room's own cellar rating, so skylights and non-cooling walls cost you exactly the way they already do in vanilla. Ice now counts as a cooling wall material, so lining a room with it no longer works against you.</li>
+<li><strong>Look at any food container</strong> to see where you stand. The block info panel reports how many ice blocks it can see and how much of the chill you've earned, right above the perish-speed line the game already shows you.</li>
+<li><strong>Winter is free.</strong> Ambient cold already passes through, so a cellar that's colder than the ice target is simply left alone.</li>
+</ul>
+
+<h3>Ice that lasts (and doesn't flood your cellar)</h3>
+
+<p>Vanilla rolls ice melting purely off the outdoor climate and replaces every melted block with a full water source &mdash; which quietly floods any cellar you stock. Here:</p>
+
+<ul>
+<li>Melt chance is rolled against the <strong>chilled room temperature</strong> instead, so a well-stocked cellar preserves its own ice.</li>
+<li>Ice still wastes away eventually &mdash; roughly <strong>one block per ~17 hours of real play time</strong> in a fully chilled cellar. Restocking is part of the deal.</li>
+<li>Ice melting inside an enclosed room <strong>vanishes instead of flooding it</strong>.</li>
+<li>Ice buried inside a wall is insulated and doesn't melt at all.</li>
+<li>Below 2&deg;C outdoors the game never rolls at all, so winter preserves cellar ice completely.</li>
+</ul>
+
+<h3>Configuration</h3>
+
+<p>Everything is tunable in <code>ModConfig/icecellar.json</code>, created on first run. A restart is needed for changes to take effect.</p>
+
+<ul>
+<li><code>Enabled</code> (default <code>true</code>) &mdash; master switch. Off is fully vanilla, <em>including</em> ice that melts back into water sources.</li>
+<li><code>MinBlocks</code> (<code>4</code>) &mdash; ice blocks needed before any chill applies.</li>
+<li><code>FullBlocks</code> (<code>10</code>) &mdash; ice blocks for the full effect.</li>
+<li><code>Temp</code> (<code>-3</code>) &mdash; effective cellar temperature at full effect.</li>
+<li><code>MinMeltChance</code> (<code>0.01</code>) &mdash; floor on the melt roll. Set it to <code>0</code> if you want fully chilled cellar ice to last forever.</li>
+</ul>
+
+<h3>Compatibility</h3>
+
+<p>Safe to add to an existing world and safe to remove again &mdash; there is nothing of this mod's saved in your world, so uninstalling simply returns your cellars to vanilla behaviour. Works in singleplayer and on servers; on a server the server's config is the one that counts.</p>
+
+<p>This mechanic also ships inside <strong>The Seraph's Ledger</strong>, my bundle of small tweaks. <strong>Running both is safe</strong> &mdash; Seraph's Ledger 1.15.1 and newer detects this mod and hands the feature over, so nothing is applied twice. If you run an older Seraph's Ledger alongside this, just switch its ice-cooled cellars feature off.</p>
