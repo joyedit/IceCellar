@@ -55,6 +55,29 @@ changes to take effect (the mechanic is wired up at load time).
 | `Temp` | `-3` | Effective cellar temperature at full effect (clamped to -5..5). |
 | `MinMeltChance` | `0.01` | Floor on the per-tick melt roll. `0` makes fully chilled cellar ice last forever. |
 
+## Works with Ice Is Cellar
+
+[Ice Is Cellar](https://mods.vintagestory.at/iceiscellar) (NagiPantsu) pairs
+with this mod with no setup, and the combination is the closest thing to a
+permanent freezer:
+
+- **Its ice bricks count here.** This mod counts anything the game classes as
+  an `Ice` block material, and `iceiscellar:icebricks` is declared exactly
+  that — so bricks chill a cellar just like glacier ice does, 4 to start and 10
+  for the full effect, whether they're stacked inside or lining the walls.
+- **Ice bricks never melt.** They're a plain block rather than lake ice, so
+  neither vanilla's melt tick nor this mod's touches them. A cellar built out
+  of ice bricks stays cold forever with no restocking — unlike harvested lake
+  ice, which slowly wastes away by design.
+- **The two don't stack into nonsense.** Ice Is Cellar caps the perish rate
+  with a `Math.Min`, and the value it compares against already includes this
+  mod's chill, so whichever produces the colder cellar wins rather than the two
+  multiplying together. Running both gives you the better of the two, not a
+  broken one.
+- **Its cooling-wall list helps here too.** It marks logs, planks and packed
+  glacier ice as cooling wall materials, which raises the room's cellar rating
+  — and this mod's chill scales with that rating.
+
 ## Multiplayer
 
 Universal mod, but only genuinely needed on the **server** — that's where food
