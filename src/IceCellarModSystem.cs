@@ -14,9 +14,14 @@ namespace IceCellar
     // patch the same methods, and two stacked postfixes would chill a cellar
     // twice, so Seraph's Ledger 1.15.1+ stands down when it sees this mod
     // installed - this one always owns the feature when present.
+    //
+    // Note the modid is "icecooledcellars", not "icecellar" - the ModDB had the
+    // shorter id reserved by an unlisted mod. The assembly, namespace and repo
+    // stay IceCellar; only the modid, the asset domain (assets/icecooledcellars)
+    // and the lang key prefix follow the registered id.
     public class IceCellarModSystem : ModSystem
     {
-        private const string HarmonyId = "icecellar.patches";
+        private const string HarmonyId = "icecooledcellars.patches";
         private Harmony harmony;
 
         public override void Start(ICoreAPI api)

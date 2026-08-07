@@ -37,10 +37,17 @@ feature-identical to the ice-cooled cellars feature in Seraph's Ledger 1.15.0.
   clients without the mod can still join — they just see vanilla's uncooled
   perish speed and no ice count in the block info panel.
 
+### Naming
+- The registered modid is **`icecooledcellars`** — the ModDB already had
+  `icecellar` reserved by another (unlisted) mod. The displayed name, the asset
+  domain's lang keys, the config file (`ModConfig/icecellar.json`) and the log
+  prefix are unaffected by that; only the modid and `assets/icecooledcellars/`
+  follow the registered id.
+
 ### Coexistence with The Seraph's Ledger
 - Both mods patch the same vanilla methods, so stacking them would chill a
-  cellar twice. Seraph's Ledger 1.15.1 stands down when it sees `icecellar`
-  installed; running both is safe from that version on.
+  cellar twice. Seraph's Ledger 1.15.1 stands down when it sees
+  `icecooledcellars` installed; running both is safe from that version on.
 - On first run, Ice Cellar adopts any ice-cellar *tuning* values already set in
   `ModConfig/seraphsledger/features.json` (block thresholds, temperature, melt
   floor) instead of resetting them to defaults. That mod's on/off switch is

@@ -125,12 +125,12 @@ namespace IceCellar
 
             if (ice >= minBlocks)
             {
-                dsc.AppendLine(Lang.Get("icecellar:chilled", ice,
+                dsc.AppendLine(Lang.Get("icecooledcellars:chilled", ice,
                     Math.Round(IceFactor(ice) * 100f)));
             }
             else
             {
-                dsc.AppendLine(Lang.Get("icecellar:needsmore", ice, minBlocks));
+                dsc.AppendLine(Lang.Get("icecooledcellars:needsmore", ice, minBlocks));
             }
         }
 

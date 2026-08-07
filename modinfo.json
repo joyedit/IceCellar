@@ -1,6 +1,6 @@
 {
   "type": "code",
-  "modid": "icecellar",
+  "modid": "icecooledcellars",
   "name": "Ice Cellar",
   "authors": ["Feyd"],
   "description": "Store ice, keep food fresh. Stack blocks of ice in a proper cellar and it chills below the vanilla 5°C floor — down to -3°C with ten blocks — so food keeps about twice as long. Ice lining the walls, floor or ceiling counts just as much as ice standing in the room, and a container's tooltip tells you how many blocks it sees and how much chill you've earned. Cellar ice also stops behaving like ice in the summer sun: it melts slowly at the chilled room temperature instead of the outdoor climate, and inside an enclosed room it vanishes rather than flooding your cellar with water. Winter preserves it completely. No new blocks or recipes — just ice and a good cellar.",

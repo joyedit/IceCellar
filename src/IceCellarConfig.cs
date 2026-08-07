@@ -34,6 +34,10 @@ namespace IceCellar
         // forever.
         public float MinMeltChance = 0.01f;
 
+        // Named after the mod ("Ice Cellar"), not its modid - the ModDB already
+        // had "icecellar" reserved, so the registered modid is the clumsier
+        // "icecooledcellars". Players look for the config under the name they
+        // see in the mod list, so this stays as is; it is not a stale rename.
         public const string FileName = "icecellar.json";
 
         // Loads the config, writing out a default file the first time so the

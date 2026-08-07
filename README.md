@@ -2,7 +2,8 @@
 
 A Vintage Story mod: **store ice, keep food fresh.**
 
-- **Mod ID:** `icecellar`
+- **Mod ID:** `icecooledcellars` (the shorter `icecellar` was already taken on
+  the ModDB; the config file and log prefix still use the mod's name)
 - **Author:** Feyd
 
 Vanilla cellars bottom out at 5°C no matter how deep you dig. Stack blocks of
