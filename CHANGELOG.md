@@ -2,6 +2,11 @@
 
 All notable changes to Ice Cellar are documented here.
 
+## 1.0.2 — 2026-08-22
+
+- Compatibility release for Vintage Story 1.22.7. Rebuilt against the 1.22.7
+  assemblies; no code changes.
+
 ## 1.0.1 — 2026-08-07
 
 ### Changed
